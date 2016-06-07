@@ -5,7 +5,6 @@ using Microsoft.AspNet.FileProviders;
 using Microsoft.AspNet.StaticFiles;
 using Swashbuckle.Application;
 using Swashbuckle.Swagger;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace Microsoft.AspNet.Builder
 {
@@ -20,7 +19,7 @@ namespace Microsoft.AspNet.Builder
 
             app.UseMiddleware<SwaggerDocsMiddleware>(routeTemplate);
 
-            var swaggerPathHelper = app.ApplicationServices.GetService<SwaggerPathHelper>();
+            var swaggerPathHelper =(SwaggerPathHelper) app.ApplicationServices.GetService(typeof(SwaggerPathHelper)) ;
             swaggerPathHelper.SetRouteTemplate(routeTemplate);
         }
 

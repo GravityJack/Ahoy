@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Microsoft.Extensions;
 using Microsoft.Extensions.OptionsModel;
 
 namespace Swashbuckle.Application

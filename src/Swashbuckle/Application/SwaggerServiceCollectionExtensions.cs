@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.AspNet.Mvc;
 using Microsoft.AspNet.Mvc.ApiExplorer;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.OptionsModel;
 using Newtonsoft.Json;
 using Swashbuckle.Swagger;
